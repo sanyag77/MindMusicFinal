@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <py-env>
+            - matplotlib
+        </py-env>
+    </head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <body>
+        <py-script>
+            for i in range(2):
+            <div id="matplotlib-bar"></div>
+            <py-script output="'matplotlib-bar">
+                import matplotlib.pyplot as plt
+                # Python Code
+                # importing the matplotlib library
+                fig, ax = plt.subplots()
+                x = ["Python", "C++", "JavaScript", "Golang"]
+                y = [10, 5, 9, 7]
+                plt.plot(x, y, marker='o', linestyle='-', color='b')
+                plt.xlabel('Language')
+                plt.ylabel('Score')
+                plt.title('Language vs Score')
+                fig
+            </py-script>
+        </py-script>
+    </body>
+</html>

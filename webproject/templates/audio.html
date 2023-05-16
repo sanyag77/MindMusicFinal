@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Voice Recorder</title>
+</head>
+<body>
+    <h1> Step 1: Record </h1>
+    <div class="display">
+    </div>
+
+    <h1> Step 2: Download File</h1>
+    <div class="controllers">
+    </div>
+    <h1> Step 3: Upload File for Analysis</h1>
+        <div class="container">
+            <form method="post" enctype="multipart/form-data">
+                <input type="file" name="file" />
+                <br>
+                <input type="submit" name="transcribe" />
+            </form>
+        </div>
+</body>
+<script src="../static/js/voicerecorder.js"></script>
+</html>

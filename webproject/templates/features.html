@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FEATURES</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000");
+      min-height: 100%;
+    }
+    
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button w3-wide">MIND MUSIC</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="features.html" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> FEATURES</a>
+        <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> LOGIN/SIGNUP</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="features.html" onclick="w3_close()" class="w3-bar-item w3-button">FEATURES</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN/SIGNUP</a>
+  </nav>
+  
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small">Explore the features of Mind Music</span><br>
+      <p><a href="login.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Get Started</a></p>
+    </div> 
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    </div>
+  </header>
+  
+  <!-- Features Section
+  
+      MAKE IT EXPANDABLE (CLICK ON ONE THING, IT WILL EXPAND TO GIVE MORE DETAILS)
+  -->
+
+  <div class="w3-container w3-center w3-dark-grey" style="padding:60px 16px" id="features">
+    <p class="w3-large">Choose an analysis to began your music journey.</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-purple w3-xlarge w3-padding-32">Check your sound</li>
+          <li class="w3-padding-16"> Analyze your tempo</li>
+          <li class="w3-padding-16"> Improve your playing</li>
+          <li class="w3-padding-16"> Get real time feedback</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="audio.html">
+            <button class="w3-button w3-black w3-padding-large">Start Now</button>
+          </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Check your posture</li>
+          <li class="w3-padding-16"> Analyze you posture as you play</li>
+          <li class="w3-padding-16"> Get real time feedback</li>
+          <li class="w3-padding-16"> Get tips to improve posture</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="video.html">
+              <button class="w3-button w3-black w3-padding-large">Start Now</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-purple w3-xlarge w3-padding-32">Check your playing</li>
+          <li class="w3-padding-16"> EEG technology</li>
+          <li class="w3-padding-16"> Get real time feedback</li>
+          <li class="w3-padding-16"> Learn your music faster</li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="eeg.html">
+              <button class="w3-button w3-black w3-padding-large">Start Now</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+</body>
+</html>
